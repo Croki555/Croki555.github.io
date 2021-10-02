@@ -67,25 +67,25 @@ body {
 } */
 
 
-a:focus {
+a:focus-visible {
   outline-style: solid;
   outline-width: 2px;
   outline-color: var(--dark-orange);
 }
 
-button:focus {
+button:focus-visible {
   outline-style: solid;
   outline-width: 3px;
   outline-color: var(--dark-orange);
 }
 
-input:focus {
+input:focus-visible {
   outline-style: solid;
   outline-width: 3px;
   outline-color: var(--dark-orange);
 }
 
-.ui-accordion-header:focus {
+.ui-accordion-header:focus-visible {
   outline-style: solid;
   outline-width: 3px;
   outline-color: var(--dark-orange);
