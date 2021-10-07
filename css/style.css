@@ -414,7 +414,8 @@ input:focus-visible {
 
 .main-banner__head {
   margin-bottom: 25px;
-  max-width: 817px;
+/*   max-width: 817px; */
+  max-width: 1200px;
   font-size: 70.37px;
   line-height: 85.79px;
   font-weight: 800;
