@@ -492,7 +492,8 @@ input:focus-visible {
 
 .about-us__bottom {
   position: relative;
-  padding: 20px 70px 40px 32px;
+  width: 100%;
+  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
