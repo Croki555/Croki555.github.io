@@ -28,6 +28,7 @@ img {
 .projects__list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .projects__item {
