@@ -142,20 +142,26 @@ input:focus-visible {
 }
 
 .tab-content-active {
-  display: block;
+  display: flex;
+  justify-content: space-between;
 }
 
 .tab-content__item {
+  margin-right: 20px;
+  flex-grow: 1;
+  width: 50%;
+  justify-content: center;
   display: flex;
   flex-direction: column;
 }
 
 .tab__img {
-  position: absolute;
-  align-self: flex-end;
-}
+  display: flex;
+  flex-grow: 1;
+  width: 50%;
+} 
 
-.tab__img-2 {
+/* .tab__img-2 {
   width: 871px;
   height: 379px;
 }
@@ -163,7 +169,7 @@ input:focus-visible {
 .tab__img-4 {
   width: 860px;
   height: 347px;
-}
+} */
 
 
 .bg-images {

@@ -146,6 +146,9 @@ sup {
  */
 
 img {
+  display: block;
+  height: auto;
+  width: 100%;
   border-style: none;
 }
 
