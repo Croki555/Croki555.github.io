@@ -44,7 +44,11 @@ img {
 
 
 .projects__head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 10px 0;
+    min-height: 100px;
     text-align: center;
     font-size: 23px;
 }
