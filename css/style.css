@@ -1,32 +1,32 @@
 /*ПОДКЛЮЧЕНИЕ ШРИФТОВ*/
 @font-face {
-  font-family: 'Montserrat';
-  src: url('../fonts/Montserrat-Regular.woff2') format('woff2'),
-      url('../fonts/Montserrat-Regular.woff') format('woff');
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"),
+    url("../fonts/Montserrat-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url('../fonts/Montserrat-Bold.woff2') format('woff2'),
-      url('../fonts/Montserrat-Bold.woff') format('woff');
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"),
+    url("../fonts/Montserrat-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url('../fonts/Montserrat-ExtraBold.woff2') format('woff2'),
-      url('../fonts/Montserrat-ExtraBold.woff') format('woff');
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-ExtraBold.woff2") format("woff2"),
+    url("../fonts/Montserrat-ExtraBold.woff") format("woff");
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url('../fonts/Montserrat-SemiBold.woff2') format('woff2'),
-      url('../fonts/Montserrat-SemiBold.woff') format('woff');
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"),
+    url("../fonts/Montserrat-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
 }
@@ -38,15 +38,15 @@
 }
 
 :root {
-  --orange: #FF9900;
-  --dark-orange: #E1670E;
-  --white-orange: #FFA620;
-  --white: #FFFFFF;
-  --grey: #CACACA;
+  --orange: #ff9900;
+  --dark-orange: #e1670e;
+  --white-orange: #ffa620;
+  --white: #ffffff;
+  --grey: #cacaca;
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   background: var(--white);
   min-width: 320px;
 }
@@ -55,60 +55,18 @@ body {
   color: var(--dark-orange);
 }
 
- /* .header__logo,
-.header__link,
-.header__btn,
-.our-work__btn,
-.ui-accordion-header:focus {
-  -moz-outline-style: solid;
-  -moz-outline-radius: 2px solid var(--dark-orange);
-  outline-color: var(--dark-orange);
-: 2px solid var(--dark-orange);
-} */
-
-
-/* a:focus-visible {
-  outline-style: solid;
-  outline-width: 2px;
-  outline-color: var(--dark-orange);
-}
-
-button:focus-visible {
-  outline-style: solid;
-  outline-width: 3px;
-  outline-color: var(--dark-orange);
-}
-
-input:focus-visible {
-  outline-style: solid;
-  outline-width: 3px;
-  outline-color: var(--dark-orange);
-}
-
-.ui-accordion-header:focus-visible {
-  outline-style: solid;
-  outline-width: 3px;
-  outline-color: var(--dark-orange);
-} */
-
-
-
-
-
-
-
-
-
 .header__link,
 .questions__link,
+.projects__link,
 .footer__link {
   text-decoration: none;
 }
 
-
 .header__list,
 .our-work__list,
 .questions__list,
+.projects__list,
+.one-story-houses__list,
 .footer__list,
 .menu__list {
   list-style: none;
@@ -135,6 +93,9 @@ input:focus-visible {
   cursor: pointer;
 }
 
+.sail {
+  font-size: 23px;
+}
 
 /*TABS*/
 .tab-content {
@@ -159,18 +120,7 @@ input:focus-visible {
   display: flex;
   flex-grow: 1;
   width: 50%;
-} 
-
-/* .tab__img-2 {
-  width: 871px;
-  height: 379px;
 }
-
-.tab__img-4 {
-  width: 860px;
-  height: 347px;
-} */
-
 
 .bg-images {
   background-position: center center;
@@ -179,17 +129,16 @@ input:focus-visible {
 }
 
 .main-banner__img1 {
-  background-image: url('../img/PNG/low-angle-photo-of-balconies1920-1.png');
+  background-image: url("../img/PNG/low-angle-photo-of-balconies1920-1.png");
 }
 
 .main-banner__img2 {
-  background-image: url('../img/PNG/brown-and-blue-glass-building-1920-2.png');
+  background-image: url("../img/PNG/brown-and-blue-glass-building-1920-2.png");
 }
 
 .main-banner__img3 {
-  background-image: url('../img/PNG/apartment-apartment-building-architecture-building-1920-3.png');
+  background-image: url("../img/PNG/apartment-apartment-building-architecture-building-1920-3.png");
 }
-
 
 /**/
 
@@ -215,7 +164,7 @@ input:focus-visible {
   margin-bottom: 1px;
   width: 100%;
   height: 100%;
-  background-color: #FFF;
+  background-color: #fff;
   box-shadow: 0px 5px 40px rgb(0 0 0 / 10%);
 }
 
@@ -304,7 +253,7 @@ input:focus-visible {
   max-width: 420px;
   padding: 155px 147px 220px 70px;
   overflow: auto;
-  background-color: #FFF;
+  background-color: #fff;
   transform: translateX(-101%);
   transition: 1s;
 }
@@ -392,15 +341,13 @@ input:focus-visible {
 }
 
 .header__burger.rotate::after {
-  transform: rotate( 90deg) translate(-20px, 0px);
+  transform: rotate(90deg) translate(-20px, 0px);
 }
 
-.header__burger.rotate:hover::after, .header__burger.rotate:focus::after {
+.header__burger.rotate:hover::after,
+.header__burger.rotate:focus::after {
   width: 100%;
 }
-
-
-
 
 /* Section-Main banner*/
 .section-main-banner {
@@ -420,7 +367,7 @@ input:focus-visible {
 
 .main-banner__head {
   margin-bottom: 25px;
-/*   max-width: 817px; */
+  /*   max-width: 817px; */
   max-width: 1200px;
   font-size: 70.37px;
   line-height: 85.79px;
@@ -448,7 +395,7 @@ input:focus-visible {
 
 .main-banner__btn:hover {
   border: 0 solid var(--white-orange);
-  background-color: #FFC266;
+  background-color: #ffc266;
 }
 
 .main-banner__btn--pressed:active {
@@ -507,23 +454,23 @@ input:focus-visible {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
- .about-us__description {
+.about-us__description {
   display: inline-block;
   max-width: 498px;
   font-size: 16px;
   line-height: 32px;
   font-weight: bold;
-  color: #FFF;
+  color: #fff;
 }
 
- .about-us__btn {
+.about-us__btn {
   margin-left: 76px;
   padding: 17px 36px;
   border: 3px solid var(--orange);
   font-size: 16px;
   font-weight: bold;
   background-color: transparent;
-  color: #FFFF;
+  color: #ffff;
 }
 
 .about-us__btn--hover:hover {
@@ -544,7 +491,7 @@ input:focus-visible {
 
 .about-us__text {
   padding: 67px 80px 68px 300px;
-  border: 1px solid #CACACA;
+  border: 1px solid #cacaca;
   font-size: 16px;
   line-height: 32px;
   font-weight: 500;
@@ -556,7 +503,7 @@ input:focus-visible {
 
 .about-us__bg-image-one {
   background-position: 63px 71px;
-  background-image: url('../img/SVG/twice1.svg');
+  background-image: url("../img/SVG/twice1.svg");
   background-repeat: no-repeat;
 }
 
@@ -694,6 +641,57 @@ input:focus-visible {
 .our-work__btn-second--pressed:active {
   background-color: #000;
 }
+/* Projects */
+.section-projects {
+  padding-bottom: 100px;
+}
+
+.projects__head,
+.one-story-houses__head {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 500;
+}
+
+.projects__list,
+.one-story-houses__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.projects__item,
+.one-story-houses__item {
+  padding: 10px;
+  flex: 0 1 29%;
+}
+
+.projects__img {
+  border-top-right-radius: 14%;
+  border-top-left-radius: 14%;
+  min-height: 340px;
+}
+
+.one-story-houses-block,
+.projects__block-link {
+  border: 2px solid var(--grey);
+  border-top: none;
+  padding: 20px;
+  text-align: center;
+}
+
+.projects__link {
+  font-size: 20px;
+  color: #000;
+  padding: 5px;
+  border-bottom: 1px solid var(--orange);
+}
+
+.projects__link:hover {
+  border-bottom: 1px solid var(--dark-orange);
+  color: var(--dark-orange);
+}
 
 /*Questions*/
 .section-questions {
@@ -721,7 +719,7 @@ input:focus-visible {
 
 .questions__item--hovered:hover {
   border-top: 1px solid var(--white-orange);
-  border-bottom:1px solid var(--white-orange);
+  border-bottom: 1px solid var(--white-orange);
 }
 
 .questions__link {
@@ -743,7 +741,7 @@ input:focus-visible {
   width: 100%;
   height: 100%;
   background-position: right center;
-  background-image: url('../img/SVG/plus.svg');
+  background-image: url("../img/SVG/plus.svg");
   background-repeat: no-repeat;
 }
 
@@ -751,21 +749,9 @@ input:focus-visible {
   display: inline-block;
   color: var(--grey);
 }
-/*Accordion*/
-/* .ui-accordion .ui-accordion-header {
-  display: block;
-  cursor: pointer;
-  position: relative;
-  margin: 2px 0 0 0;
-  padding: 39px 150px 39px 2.99px;
-  font-size: 24px;
-  font-weight: bold;
-  color: #333;
-} */
 
 .ui-accordion {
-  border-bottom: 1px solid #CACACA;
-
+  border-bottom: 1px solid #cacaca;
 }
 
 .ui-accordion-header {
@@ -773,7 +759,6 @@ input:focus-visible {
   line-height: 32px;
   font-weight: bold;
 }
-
 
 /*Footer*/
 .footer {
@@ -807,7 +792,7 @@ input:focus-visible {
   display: block;
   width: 224px;
   height: 72px;
-  background-image: url('../img/PNG/logo1.png');
+  background-image: url("../img/PNG/logo1.png");
   background-repeat: no-repeat;
 }
 
@@ -845,18 +830,18 @@ input:focus-visible {
 
 .footer__link-facebook {
   margin-right: 25.08px;
-  background-image: url('../img/SVG/fb.svg');
+  background-image: url("../img/SVG/fb.svg");
   background-repeat: no-repeat;
 }
 
 .footer__link-vk {
   margin-right: 25px;
-  background-image: url('../img/SVG/vk.svg');
+  background-image: url("../img/SVG/vk.svg");
   background-repeat: no-repeat;
 }
 
 .footer__link-instagram {
-  background-image: url('../img/SVG/instagram.svg');
+  background-image: url("../img/SVG/instagram.svg");
   background-repeat: no-repeat;
 }
 /*Forms*/
@@ -922,7 +907,7 @@ input:focus-visible {
   background-color: var(--orange);
 }
 
- .footer__input-checkbox {
+.footer__input-checkbox {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -944,7 +929,7 @@ input:focus-visible {
 /* Checked */
 
 .footer__input-checkbox:checked + .footer__checkbox {
-  background-image: url('../img/SVG/Checkboxonn.svg');
+  background-image: url("../img/SVG/Checkboxonn.svg");
 }
 
 /* Focused */
@@ -953,7 +938,6 @@ input:focus-visible {
   border-color: var(--dark-orange);
 }
 
-
 .footer__label {
   display: flex;
   flex-direction: row-reverse;
@@ -961,23 +945,26 @@ input:focus-visible {
   color: var(--grey);
 }
 
-
-.footer__input-checkbox:checked+label::before {
-
-} */
-
-стили при наведении курсора на checkbox
-.footer__input-checkbox:not(:disabled):not(:checked)+label:hover::before {
-
+.footer__input-checkbox:checked + label::before {
+}
+*/
+  стили
+  при
+  наведении
+  курсора
+  на
+  checkbox
+  .footer__input-checkbox:not(:disabled):not(:checked)
+  + label:hover::before {
 }
 
 /* стили для активного состояния чекбокса (при нажатии на него) */
-.footer__input-checkbox:not(:disabled):active+label::before {
+.footer__input-checkbox:not(:disabled):active + label::before {
   background-image: none;
 }
 
 /* стили для чекбокса, находящегося в фокусе */
-.footer__input-checkbox:focus+label::before {
+.footer__input-checkbox:focus + label::before {
   border-color: var(--dark-orange);
 }
 
@@ -990,7 +977,6 @@ input:focus-visible {
 .footer__input-checkbox:disabled+label::before {
 
 } */
-
 
 .footer__description {
   display: inline-block;
