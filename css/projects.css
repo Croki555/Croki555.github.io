@@ -1,7 +1,32 @@
+.one-story__head {
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 500;
+}
+
+.one-story__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.one-story__item {
+  margin-bottom: 40px;
+  display: flex;
+}
+
+.one-story__img {
+  width: 50%;
+  border-radius: 162px;
+}
+
 .one-story-description {
-    padding: 32px;
-    line-height: 40px;
-    letter-spacing: 2px;
-    text-align: justify;
-    font-size: 27px;
+  display: flex;
+  padding: 32px;
+  align-items: center;
+  width: 50%;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-align: justify;
+  font-size: 27px;
 }
