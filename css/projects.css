@@ -22,6 +22,7 @@
 
 .one-story-description {
   display: flex;
+  flex-direction: column;
   padding: 32px;
   align-items: center;
   width: 50%;
