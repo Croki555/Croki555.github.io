@@ -1,26 +1,31 @@
-.one-story__head {
+.one-story__head,
+.two-story__head {
   margin-bottom: 25px;
   text-align: center;
   font-size: 48px;
   font-weight: 500;
 }
 
-.one-story__list {
+.one-story__list,
+.two-story__list {
   display: flex;
   flex-direction: column;
 }
 
-.one-story__item {
+.one-story__item,
+.two-story__item {
   margin-bottom: 40px;
   display: flex;
 }
 
-.one-story__img {
+.one-story__img,
+.two-story__img {
   width: 50%;
   border-radius: 162px;
 }
 
-.one-story-description {
+.one-story-description,
+.two-story-description {
   display: flex;
   flex-direction: column;
   padding: 32px;
