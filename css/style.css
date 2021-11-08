@@ -349,6 +349,9 @@ body {
   width: 100%;
 }
 
+.section-watch {
+  padding-bottom: 50px;
+}
 /* Section-Main banner*/
 .section-main-banner {
   padding-bottom: 100px;
@@ -985,4 +988,7 @@ body {
   font-weight: normal;
   color: var(--grey);
 }
+
+
+
 /*END*/
