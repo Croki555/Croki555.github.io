@@ -1,46 +1,21 @@
 /*========== Desktop First ==========*/
-@media (max-width: 1680px) {
-  /* .our-work__description {
-    margin-bottom: 28px;
-    max-width: 437px;
-  } */
-
-  /* .our-work__img-1920 {
-    height: 699px;
-    width: 64%;
-  } */
-
-  /* .tab__img-2 {
-    height: 539px;
-  }
-
-  .tab__img-3 {
-    width: 850px;
-    height: 667px;
-  }
-
-  .tab__img-4 {
-    height: 507px;
-  } */
-}
-
 @media (max-width: 1400px) {
   /*==========About-us-1400px==========*/
   .about-us__flex {
-    margin-left: 1px;
+    /* margin-left: 1px;
     flex-direction: column;
-    width: 100%;
+    width: 100%; */
   }
 
   .about-us__elem {
-    margin-bottom: 50px;
+    /* margin-bottom: 50px;
     height: 640px;
-    width: 100%;
+    width: 100%; */
   }
 
   .about-us__bottom {
-    padding: 38px 54px 40px 44px;
-    width: 100%;
+    /* padding: 38px 54px 40px 44px;
+    width: 100%; */
   }
 
   .about-us__elements {
@@ -74,31 +49,11 @@
 }
 
 @media (max-width: 1350px) {
-  /* .our-work__img-1920 {
-    display: none;
-  } */
-
   .our-work__img-1024 {
     display: block;
     width: 437px;
     height: 689px;
   }
-
-  /* .tab__img {
-    width: 437px;
-  } */
-
-  /* .tab__img-2 {
-    height: 539px;
-  }
-
-  .tab__img-3 {
-    height: 667px;
-  }
-
-  .tab__img-4 {
-    height: 507px;
-  } */
 }
 
 @media all and (max-width: 1024px) {
@@ -191,8 +146,8 @@
   }
 
   .main-banner__btn {
-    padding: 24.5px 37.45px;
-    font-size: 24px;
+    padding: 17.5px 5.45px;
+    font-size: 23px;
   }
   /*==========About-us-1024px==========*/
   .section-about-us {
@@ -299,15 +254,6 @@
     max-width: max-content;
   }
 
-  /* .tab__img {
-    position: relative;
-    margin-bottom: 39px;
-    align-self: flex-start;
-    order: -1;
-    width: 100%;
-    height: 389px;
-  } */
-
   .footer__elem-two {
     flex-shrink: 1;
   }
@@ -368,6 +314,18 @@
   .header__menu {
     padding-bottom: 233px;
   }
+  /* ========Project -768px */
+  .section-projects {
+    padding-bottom: 50px;
+  }
+  
+  .projects__item {
+    flex: 0 1 47%;
+  }
+  
+  .projects__img {
+    min-height: 275px;
+  }
   /*==========Main-banner-768px==========*/
   .swiper-container {
     max-width: 100%;
@@ -384,6 +342,7 @@
 
   .main-banner__head {
     max-width: 721px;
+    font-size: 48px;
   }
 
   .main-banner__subhead {
@@ -403,21 +362,19 @@
   }
 
   .about-us__flex {
-    margin-left: 0;
+    /* margin-left: 0; */
   }
 
   .about-us__elem {
-    margin-bottom: 40px;
-    height: 650px;
+    /* margin-bottom: 40px;
+    height: 650px; */
   }
 
   .about-us__bottom {
-    padding: 26px 31px 26px 29px;
+    /* padding: 26px 31px 26px 29px; */
   }
 
   .about-us__description {
-    margin-right: 14px;
-    max-width: 406px;
     line-height: 31px;
   }
 
@@ -439,6 +396,10 @@
   .about-us__bg-image-two {
     background-size: 121px 100px;
     background-position: 31px 67px;
+  }
+  /* ==========Team-768px============ */
+  .team__head {
+    font-size: 38px;
   }
   /*==========Our-work-768px==========*/
   .section-our-work {
@@ -547,7 +508,6 @@
     clear: left;
     transform: translateX(100%);
     overflow: hidden;
-    /* transform: translateX(103%); */
   }
 
   .menu-active {
@@ -570,36 +530,40 @@
   }
 
   .main-banner__subhead {
+    margin-bottom: 20px;
     line-height: 28px;
     max-width: 658px;
     text-align: center;
   }
   /*==========About-us-468px==========*/
+  .about-us__subhead {
+    margin-bottom: 30px;
+  }
+
   .about-us__elem {
-    height: 360px;
+    /* margin: 0;
+    height: auto; */
+  }
+
+  .about-us__elem-img2 {
+    display: block;
+    margin-bottom: 10px;
   }
 
   .about-us__elem-img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
+    display: none;
   }
 
   .about-us__bottom {
-    padding: 0;
-    top: 255px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    /* padding: 0;
+    display: block;
     box-shadow: none;
-    background-color: inherit;
+    background-color: inherit; */
   }
 
   .about-us__description {
-    margin-bottom: 30px;
+    margin-right: 0;
+    margin-bottom: 10px;
     max-width: 100%;
     line-height: 31px;
     font-weight: 500;
@@ -611,9 +575,9 @@
     color: #ff9900;
   }
 
-  .about-us__elements {
+  /* .about-us__elements {
     padding-top: 238px;
-  }
+  } */
 
   .about-us__text {
     border: none;
@@ -626,7 +590,7 @@
     flex-direction: column;
     align-content: flex-end;
     justify-content: flex-end;
-    height: 426px;
+    height: 335px;
     background-position: left top;
   }
 
@@ -636,7 +600,7 @@
     flex-direction: column;
     align-content: flex-end;
     justify-content: flex-end;
-    height: 426px;
+    height: 350px;
     background-position: left top;
   }
 
@@ -647,8 +611,18 @@
   .about-us__subheading {
     line-height: 40px;
   }
-  /*==========Our-work-468px==========*/
+  /* ==========Projects-468px */
+  .projects__item {
+    flex: 0 1 100%
+  }
 
+  .projects__img {
+    min-height: 220px;
+  }
+  /*==========Our-work-468px==========*/
+  .team__head {
+    text-align: center;
+  }
   .tab__img {
     height: 200px;
   }
@@ -778,8 +752,9 @@
     font-size: 12px;
   }
   /*==========Abot-us-320px==========*/
+  .section-team,
   .section-about-us {
-    padding-bottom: 47px;
+    padding-bottom: 20px;
   }
 
   .about-us__head {
@@ -795,27 +770,27 @@
   }
 
   .about-us__elem {
-    margin: 0;
-    height: 200px;
+    /* margin: 0;
+    height: 200px; */
   }
 
   .about-us__elem-img {
-    position: absolute;
+    /* position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    object-fit: fill;
+    object-fit: fill; */
   }
 
   .about-us__bottom {
-    top: 198px;
+    /* top: 198px;
     padding: 0;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     box-shadow: none;
-    background-color: inherit;
+    background-color: inherit; */
   }
 
   .about-us__description {
@@ -834,7 +809,7 @@
   }
 
   .about-us__elements {
-    padding-top: 238px;
+    /* padding-top: 238px; */
   }
 
   .about-us__text:first-child {
@@ -866,7 +841,8 @@
     line-height: 22px;
   }
 
-  .about-us__subheading {
+  .about-us__subheading,
+  .team__description {
     font-size: 14px;
     line-height: 28px;
   }
@@ -937,6 +913,14 @@
     font-size: 12px;
     line-height: 15px;
     font-weight: 500;
+  }
+  /* ==========Team-320px========= */
+  .team__head {
+    font-size: 24px;
+  }
+  /* Projects-320px */
+  .projects__head {
+    font-size: 35px;
   }
   /*==========Questions-320px==========*/
   .section-questions {

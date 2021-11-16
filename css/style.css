@@ -122,6 +122,23 @@ body {
   width: 50%;
 }
 
+.movie-container {
+  position: relative;
+  padding-bottom: 56.25%; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
+  height: 0;
+  overflow: hidden;
+}
+
+.movie-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-width: 0;
+  outline-width: 0;
+}
+
 .bg-images {
   background-position: center center;
   background-repeat: no-repeat;
@@ -147,26 +164,6 @@ body {
   padding: 0 20px;
   max-width: 1770px;
   width: 100%;
-}
-
-.section-team {
-  padding-bottom: 50px;
-}
-
-.team__head {
-  font-size: 48px;
-  font-weight: 500;
-}
-
-.team__description {
-  padding: 10px;
-  text-align: justify;
-  font-size: 20px;
-}
-
-.team__link {
-  text-decoration: none;
-  color: var(--dark-orange);
 }
 
 .button_hovered:hover {
@@ -343,9 +340,6 @@ body {
   width: 100%;
 }
 
-.section-watch {
-  padding-bottom: 50px;
-}
 /* Section-Main banner*/
 .section-main-banner {
   padding-bottom: 100px;
@@ -420,54 +414,49 @@ body {
 }
 
 .about-us__flex {
-  display: flex;
+  /* display: flex;
   max-width: 100%;
-  justify-content: space-between;
+  justify-content: space-between; */
 }
 
 .about-us__elem {
-  position: relative;
+  /* position: relative;
   display: flex;
   width: 49.2%;
-  align-items: flex-end;
+  align-items: flex-end; */
+}
+
+.about-us__elem-img2 {
+  display: none;
 }
 
 .about-us__elem-img {
-  position: absolute;
+  margin-bottom: 20px;
+  /* position: absolute;
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
+  height: 100%; */
 }
 
 .about-us__bottom {
-  position: relative;
-  width: 100%;
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 20px;
 }
 
 .about-us__description {
+  margin-bottom: 10px;
   display: inline-block;
-  max-width: 498px;
   font-size: 16px;
   line-height: 32px;
   font-weight: bold;
-  color: #fff;
 }
 
 .about-us__btn {
-  margin-left: 76px;
   padding: 17px 36px;
   border: 3px solid var(--orange);
   font-size: 16px;
   font-weight: bold;
   background-color: transparent;
-  color: #ffff;
 }
 
 .about-us__btn--hover:hover {
@@ -481,13 +470,13 @@ body {
 
 .about-us__elements {
   display: flex;
-  width: 49.2%;
+  /* width: 49.2%; */
   justify-content: space-between;
   flex-direction: column;
 }
 
 .about-us__text {
-  padding: 67px 80px 68px 300px;
+  padding: 133px 80px 68px 300px;
   border: 1px solid #cacaca;
   font-size: 16px;
   line-height: 32px;
@@ -499,13 +488,13 @@ body {
 }
 
 .about-us__bg-image-one {
-  background-position: 63px 71px;
+  background-position: 63px 110px;
   background-image: url("../img/SVG/twice1.svg");
   background-repeat: no-repeat;
 }
 
 .about-us__bg-image-two {
-  background-position: 62px 55px;
+  background-position: 62px 97px;
   background-image: url(../img/SVG/twice2.svg);
   background-repeat: no-repeat;
 }
@@ -514,6 +503,32 @@ body {
   display: block;
   font-weight: bold;
   font-size: 24px;
+}
+
+/* Section team */
+.section-team {
+  padding-bottom: 50px;
+}
+
+.team__head {
+  font-size: 48px;
+  font-weight: 500;
+}
+
+.team__description {
+  padding: 10px;
+  text-align: justify;
+  font-size: 20px;
+}
+
+.team__link {
+  text-decoration: none;
+  color: var(--dark-orange);
+}
+
+/* Section watch */
+.section-watch {
+  padding-bottom: 50px;
 }
 
 /*Section Our-work*/
@@ -661,7 +676,7 @@ body {
 .projects__item,
 .one-story-houses__item {
   padding: 10px;
-  flex: 0 1 29%;
+  flex: 0 1 37%;
 }
 
 .projects__img {
