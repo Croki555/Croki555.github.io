@@ -682,7 +682,7 @@ body {
 .projects__img {
   border-top-right-radius: 14%;
   border-top-left-radius: 14%;
-  min-height: 340px;
+  height: 340px;
 }
 
 .one-story-houses-block,
