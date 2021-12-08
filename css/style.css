@@ -831,7 +831,6 @@ body {
 .footer__elem-logos {
   display: flex;
   flex-direction: row;
-  /* max-width: 231px; */
 }
 
 .footer__link-logo {
