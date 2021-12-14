@@ -1,0 +1,90 @@
+.carcass__head,
+.one-story__head,
+.two-story__head {
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 500;
+}
+
+.carcass__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.carcass__item {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 33.33%;
+}
+
+.carcass__img {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  height: 300px;
+}
+
+.carcass__description-block {
+  padding: 10px;
+  border: 1px solid #000;
+  border-top: none;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.carcass__heading {
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.carcass__sail {
+  display: block;
+  font-size: 20px;
+}
+
+.carcass__span {
+  display: block;
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+.one-story__list,
+.two-story__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.one-story__item,
+.two-story__item {
+  margin-bottom: 40px;
+  display: flex;
+}
+
+.one-story__img,
+.two-story__img {
+  width: 50%;
+  border-radius: 162px;
+}
+
+.carcass__description {
+  padding: 32px; 
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-align: justify;
+  font-size: 27px;
+}
+
+.one-story-description,
+.two-story-description {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  align-items: center;
+  width: 50%;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-align: justify;
+  font-size: 27px;
+}
