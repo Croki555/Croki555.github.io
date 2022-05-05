@@ -126,7 +126,7 @@
   }
 
   .main-banner__img1 {
-    background-image: url("../img/PNG/low-angle-photo-of-balconies1024.png");
+    background-image: url("../img/png/low-angle-photo-of-balconies1024.webp");
   }
 
   .main-banner__flex {
@@ -333,7 +333,7 @@
 
   .main-banner__img1 {
     background-position: top 100% center;
-    background-image: url("../img/PNG/low-angle-photo-of-balconies768.png");
+    background-image: url("../img/PNG/low-angle-photo-of-balconies768.webp");
   }
 
   .main-banner__flex {
@@ -724,7 +724,7 @@
   }
 
   .main-banner__img1 {
-    background-image: url("../img/PNG/low-angle-photo-of-balconies320.png");
+    background-image: url("../img/PNG/low-angle-photo-of-balconies320.webp");
   }
 
   .main-banner__flex {
@@ -1010,7 +1010,7 @@
     display: inline-block;
     width: 137px;
     height: 42px;
-    background-image: url("../img/PNG/logo320.png");
+    background-image: url("../img/PNG/logo320.webp");
   }
 
   .footer__link-logo {
